@@ -1,0 +1,205 @@
+// !$*UTF8*$!
+{
+	256AC3D80F4B6AC300CF3369 /* cocoaColorPickerAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {916, 697}}";
+			sepNavSelRange = "{503, 11}";
+			sepNavVisRange = "{0, 927}";
+		};
+	};
+	256AC3D90F4B6AC300CF3369 /* cocoaColorPickerAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {957, 1222}}";
+			sepNavSelRange = "{2200, 0}";
+			sepNavVisRange = "{891, 1507}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = 642C1A0F1205D265002DAA47 /* cocoaColorPicker */;
+		activeTarget = 8D1107260486CEB800E47090 /* cocoaColorPicker */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* cocoaColorPicker */,
+		);
+		breakpoints = (
+		);
+		codeSenseManager = 642C1A221205D26B002DAA47 /* Code sense */;
+		executables = (
+			642C1A0F1205D265002DAA47 /* cocoaColorPicker */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					738,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					301,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 302488509;
+			PBXWorkspaceStateSaveDate = 302488509;
+		};
+		perUserProjectItems = {
+			640898411207717500AD348D /* PBXTextBookmark */ = 640898411207717500AD348D /* PBXTextBookmark */;
+			640898761207749100AD348D /* PBXTextBookmark */ = 640898761207749100AD348D /* PBXTextBookmark */;
+			64089885120775EC00AD348D /* PBXTextBookmark */ = 64089885120775EC00AD348D /* PBXTextBookmark */;
+			6408989A120776A000AD348D /* PBXTextBookmark */ = 6408989A120776A000AD348D /* PBXTextBookmark */;
+			6478F9751207A944002346FB /* PBXTextBookmark */ = 6478F9751207A944002346FB /* PBXTextBookmark */;
+		};
+		sourceControlManager = 642C1A211205D26B002DAA47 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	640898411207717500AD348D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6497CBDC1205E74500B498CD /* ColorView.h */;
+		name = "ColorView.h: 20";
+		rLen = 182;
+		rLoc = 284;
+		rType = 0;
+		vrLen = 472;
+		vrLoc = 0;
+	};
+	640898761207749100AD348D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6497CBDD1205E74500B498CD /* ColorView.m */;
+		name = "ColorView.m: 32";
+		rLen = 24;
+		rLoc = 521;
+		rType = 0;
+		vrLen = 937;
+		vrLoc = 196;
+	};
+	64089885120775EC00AD348D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* cocoaColorPickerAppDelegate.h */;
+		name = "cocoaColorPickerAppDelegate.h: 23";
+		rLen = 11;
+		rLoc = 503;
+		rType = 0;
+		vrLen = 927;
+		vrLoc = 0;
+	};
+	6408989A120776A000AD348D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* cocoaColorPickerAppDelegate.m */;
+		name = "cocoaColorPickerAppDelegate.m: 86";
+		rLen = 0;
+		rLoc = 2200;
+		rType = 0;
+		vrLen = 1507;
+		vrLoc = 891;
+	};
+	642C1A0F1205D265002DAA47 /* cocoaColorPicker */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = cocoaColorPicker;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	642C1A211205D26B002DAA47 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	642C1A221205D26B002DAA47 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	6478F9751207A944002346FB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* cocoaColorPickerAppDelegate.m */;
+		name = "cocoaColorPickerAppDelegate.m: 86";
+		rLen = 0;
+		rLoc = 2200;
+		rType = 0;
+		vrLen = 1507;
+		vrLoc = 891;
+	};
+	6497CBDC1205E74500B498CD /* ColorView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {916, 674}}";
+			sepNavSelRange = "{284, 182}";
+			sepNavVisRange = "{0, 472}";
+		};
+	};
+	6497CBDD1205E74500B498CD /* ColorView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {916, 897}}";
+			sepNavSelRange = "{521, 24}";
+			sepNavVisRange = "{196, 937}";
+		};
+	};
+	8D1107260486CEB800E47090 /* cocoaColorPicker */ = {
+		activeExec = 0;
+		executables = (
+			642C1A0F1205D265002DAA47 /* cocoaColorPicker */,
+		);
+	};
+}
