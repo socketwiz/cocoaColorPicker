@@ -31,7 +31,9 @@
 
 - (void)sliderChanged:(id)sender
 {
-    BOOL isColor = NO;
+    // make this static so that if the alpha level is changed it knows
+    // whether to modify color or grayscale settings
+    static BOOL isColor = NO;
 
 	// RGB and WHITE are handled seperatly so if one is 
 	// set, reset the other. RGB is color, WHITE is grayscale
