@@ -31,34 +31,29 @@
 
 - (void)sliderChanged:(id)sender
 {
+    BOOL isColor = NO;
+
 	// RGB and WHITE are handled seperatly so if one is 
 	// set, reset the other. RGB is color, WHITE is grayscale
 	if (red == sender) {
 		//NSLog(@"slider r changed to %f", rStepSize);
 		self.whiteStepSize = 0.0;
 		colorView.white   = self.whiteStepSize;
-		[grayscaleCode setEnabled:NO];
-
-		[colorCode setEnabled:YES];
+		isColor = YES;
 		colorView.red = redStepSize;
 	}
 	if (green == sender) {
 		//NSLog(@"slider g changed to %f", gStepSize);
 		self.whiteStepSize = 0.0;
 		colorView.white   = self.whiteStepSize;
-		[colorCode setEnabled:YES];
-		[grayscaleCode setEnabled:NO];
-		
-		[colorCode setEnabled:YES];
+		isColor = YES;
 		colorView.green = greenStepSize;
 	}
 	if (blue == sender) {
 		//NSLog(@"slider b changed to %f", bStepSize);
 		self.whiteStepSize = 0.0;
 		colorView.white   = self.whiteStepSize;
-		[grayscaleCode setEnabled:NO];
-		
-		[colorCode setEnabled:YES];
+		isColor = YES;
 		colorView.blue = blueStepSize;
 	}
 	if (white == sender) {
@@ -70,9 +65,7 @@
 		colorView.red   = self.redStepSize;
 		colorView.green = self.greenStepSize;
 		colorView.blue  = self.blueStepSize;
-		[colorCode setEnabled:NO];
-		
-		[grayscaleCode setEnabled:YES];
+		isColor = NO;
 		colorView.white = whiteStepSize;
 	}
 	if (alpha == sender) {
@@ -80,8 +73,8 @@
 		colorView.alpha = alphaStepSize;
 	}
 	
-	if ([colorCode isEnabled]) {
-		[grayscaleCode setStringValue:@""];
+	if (isColor == YES) {
+		[colorCode setStringValue:@""];
 		[colorCode setStringValue:[NSString stringWithFormat:@"[NSColor colorWithCalibratedRed:%.2f green:%.2f blue:%.2f alpha:%.2f]", 
 								   self.redStepSize,
 								   self.greenStepSize,
@@ -89,9 +82,9 @@
 								   self.alphaStepSize]];
 	}
 
-	if ([grayscaleCode isEnabled]) {
+	if (isColor == NO) {
 		[colorCode setStringValue:@""];
-		[grayscaleCode setStringValue:[NSString stringWithFormat:@"[NSColor colorWithCalibratedWhite:%.2f alpha:%.2f]", 
+		[colorCode setStringValue:[NSString stringWithFormat:@"[NSColor colorWithCalibratedWhite:%.2f alpha:%.2f]", 
 									   self.whiteStepSize,
 									   self.alphaStepSize]];
 	}

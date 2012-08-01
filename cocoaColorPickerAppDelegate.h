@@ -27,7 +27,6 @@
 
 	IBOutlet ColorView *colorView;
 	IBOutlet NSTextField *colorCode;
-	IBOutlet NSTextField *grayscaleCode;
 }
 
 @property (assign) IBOutlet NSWindow *window;
