@@ -12,29 +12,23 @@
 @interface cocoaColorPickerAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
 	
-	IBOutlet NSSlider *r;
-	IBOutlet NSSlider *g;
-	IBOutlet NSSlider *b;
-	IBOutlet NSSlider *w;
-	IBOutlet NSSlider *a;
+	IBOutlet NSSlider *red;
+	IBOutlet NSSlider *green;
+	IBOutlet NSSlider *blue;
+	IBOutlet NSSlider *white;
+	IBOutlet NSSlider *alpha;
 
 	IBOutlet ColorView *colorView;
 	IBOutlet NSTextField *colorCode;
 	IBOutlet NSTextField *grayscaleCode;
-
-	CGFloat rStepSize;
-	CGFloat gStepSize;
-	CGFloat bStepSize;
-	CGFloat wStepSize;
-	CGFloat aStepSize;
 }
 
 @property (assign) IBOutlet NSWindow *window;
-@property (readwrite) CGFloat rStepSize;
-@property (readwrite) CGFloat gStepSize;
-@property (readwrite) CGFloat bStepSize;
-@property (readwrite) CGFloat wStepSize;
-@property (readwrite) CGFloat aStepSize;
+@property (readwrite) CGFloat redStepSize;
+@property (readwrite) CGFloat greenStepSize;
+@property (readwrite) CGFloat blueStepSize;
+@property (readwrite) CGFloat whiteStepSize;
+@property (readwrite) CGFloat alphaStepSize;
 
 - (void)sliderChanged:(id)sender;
 

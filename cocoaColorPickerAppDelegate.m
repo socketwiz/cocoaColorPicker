@@ -11,82 +11,82 @@
 @implementation cocoaColorPickerAppDelegate
 
 @synthesize window;
-@synthesize rStepSize;
-@synthesize gStepSize;
-@synthesize bStepSize;
-@synthesize wStepSize;
-@synthesize aStepSize;
+@synthesize redStepSize;
+@synthesize greenStepSize;
+@synthesize blueStepSize;
+@synthesize whiteStepSize;
+@synthesize alphaStepSize;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	self.aStepSize = 1.0;
-	colorView.alpha = self.aStepSize;
+	self.alphaStepSize = 1.0;
+	colorView.alpha = self.alphaStepSize;
 }
 
 - (void)sliderChanged:(id)sender
 {
 	// RGB and WHITE are handled seperatly so if one is 
 	// set, reset the other. RGB is color, WHITE is grayscale
-	if (r == sender) {
+	if (red == sender) {
 		//NSLog(@"slider r changed to %f", rStepSize);
-		self.wStepSize = 0.0;
-		colorView.white   = self.wStepSize;
+		self.whiteStepSize = 0.0;
+		colorView.white   = self.whiteStepSize;
 		[grayscaleCode setEnabled:NO];
 
 		[colorCode setEnabled:YES];
-		colorView.red = rStepSize;
+		colorView.red = redStepSize;
 	}
-	if (g == sender) {
+	if (green == sender) {
 		//NSLog(@"slider g changed to %f", gStepSize);
-		self.wStepSize = 0.0;
-		colorView.white   = self.wStepSize;
+		self.whiteStepSize = 0.0;
+		colorView.white   = self.whiteStepSize;
 		[colorCode setEnabled:YES];
 		[grayscaleCode setEnabled:NO];
 		
 		[colorCode setEnabled:YES];
-		colorView.green = gStepSize;
+		colorView.green = greenStepSize;
 	}
-	if (b == sender) {
+	if (blue == sender) {
 		//NSLog(@"slider b changed to %f", bStepSize);
-		self.wStepSize = 0.0;
-		colorView.white   = self.wStepSize;
+		self.whiteStepSize = 0.0;
+		colorView.white   = self.whiteStepSize;
 		[grayscaleCode setEnabled:NO];
 		
 		[colorCode setEnabled:YES];
-		colorView.blue = bStepSize;
+		colorView.blue = blueStepSize;
 	}
-	if (w == sender) {
+	if (white == sender) {
 		//NSLog(@"slider w changed to %f", wStepSize);
-		self.rStepSize = 0.0;
-		self.gStepSize = 0.0;
-		self.bStepSize = 0.0;
+		self.redStepSize = 0.0;
+		self.greenStepSize = 0.0;
+		self.blueStepSize = 0.0;
 		
-		colorView.red   = self.rStepSize;
-		colorView.green = self.gStepSize;
-		colorView.blue  = self.bStepSize;
+		colorView.red   = self.redStepSize;
+		colorView.green = self.greenStepSize;
+		colorView.blue  = self.blueStepSize;
 		[colorCode setEnabled:NO];
 		
 		[grayscaleCode setEnabled:YES];
-		colorView.white = wStepSize;
+		colorView.white = whiteStepSize;
 	}
-	if (a == sender) {
+	if (alpha == sender) {
 		//NSLog(@"slider a changed to %f", aStepSize);
-		colorView.alpha = aStepSize;
+		colorView.alpha = alphaStepSize;
 	}
 	
 	if ([colorCode isEnabled]) {
 		[grayscaleCode setStringValue:@""];
 		[colorCode setStringValue:[NSString stringWithFormat:@"[NSColor colorWithCalibratedRed:%.2f green:%.2f blue:%.2f alpha:%.2f]", 
-								   self.rStepSize,
-								   self.gStepSize,
-								   self.bStepSize,
-								   self.aStepSize]];
+								   self.redStepSize,
+								   self.greenStepSize,
+								   self.blueStepSize,
+								   self.alphaStepSize]];
 	}
 
 	if ([grayscaleCode isEnabled]) {
 		[colorCode setStringValue:@""];
 		[grayscaleCode setStringValue:[NSString stringWithFormat:@"[NSColor colorWithCalibratedWhite:%.2f alpha:%.2f]", 
-									   self.wStepSize,
-									   self.aStepSize]];
+									   self.whiteStepSize,
+									   self.alphaStepSize]];
 	}
 }
 
