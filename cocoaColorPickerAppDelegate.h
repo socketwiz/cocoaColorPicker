@@ -30,7 +30,7 @@
 }
 
 @property (assign) IBOutlet NSWindow *window;
-@property (readwrite) CGFloat redStepSize;
+@property (nonatomic) CGFloat redStepSize;
 @property (readwrite) CGFloat greenStepSize;
 @property (readwrite) CGFloat blueStepSize;
 @property (readwrite) CGFloat whiteStepSize;

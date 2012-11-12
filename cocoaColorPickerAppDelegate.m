@@ -18,7 +18,7 @@
 @implementation cocoaColorPickerAppDelegate
 
 @synthesize window;
-@synthesize redStepSize;
+@synthesize redStepSize = _redStepSize;
 @synthesize greenStepSize;
 @synthesize blueStepSize;
 @synthesize whiteStepSize;
@@ -42,7 +42,7 @@
 		self.whiteStepSize = 0.0;
 		colorView.white   = self.whiteStepSize;
 		isColor = YES;
-		colorView.red = redStepSize;
+		colorView.red = self.redStepSize;
 	}
 	if (green == sender) {
 		//NSLog(@"slider g changed to %f", gStepSize);
